@@ -1,125 +1,105 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  header {
-    background-color : slategrey;
-  }
-  
-  #nav {
-    padding: 0 ;
-    margin: 0;
-    text-align: center; /* centrer le texte */
-    background-color : grey;
-  }
-  #nav li {
-    display: inline;
-    list-style: none;
-  }
-  #nav a {
-    display: inline-block;
-    color: seashell     ;
-    margin: 0 25px;
-    text-decoration: none;
-  }
-
-  img { 
-	max-width: 100%;
-  }
-
-  main { background-color: slategray  ;
-      font-size: 175%;
-
-  }
-
-  footer { background-color: slategray;
-    text-align: center;
-
-  }
-  .abc {
-    height : 600px;
-    width: 600px;
-
-  }
-  #pelerinage h1 {
-      text-align : center;
-      color: red;
-      font-size: 100%;
-
-  }
-  #pelerinage h2 {
-    text-align : center;
-    color: black;
-    font-size: 100%;
-  }
-
-  #pelerinage h3 {  
-    color: black;
-    font-size: 75%;
-
-  }
-
-  #pelerinage h4 {
-    text-align : center;
-    color: black;
-    font-size: 100%;
-
-
-  }
-
-  #paragraphe {
-
-    padding  : 20px;
-  }
-
-  #annee {
-    text-align : center;
-    color: black;
-    font-size: 100%;
-  }
-
-  #Poeme {
-    text-align : center;
-    color: black;
-    font-size: 100%;
-  }
-
-  #poeme {
-    padding: 30 px ;
-  }
-  
-  #anneee {
-    text-align : center;
-    color: black;
-    font-size: 100%;
-  }
-
-  .cure {
-    height : 300px;
-    width: 300px;
-  }
-
-  #contact {
-    text-align : center;
-    color: black;
-    font-size: 100%;
-  }
-
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: sans-serif;
+  text-align: center;
+}
+header {
+  background-color: #3b4d61;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
+img {
+  max-width: 100%;
+}
+
+main {
+  background-color: white;
+  font-size: 175%;
+}
+
+footer {
+  background-color: #3b4d61;
+  text-align: center;
+}
+
+.abc {
+  height: 600px;
+  width: 600px;
+}
+
+#pelerinage h1 {
+  text-align: center;
+  color: red;
+  font-size: 100%;
+}
+
+#pelerinage h2 {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+#pelerinage h3 {
+  color: black;
+  font-size: 75%;
+}
+
+#pelerinage h4 {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+#paragraphe {
+  padding: 20px;
+}
+
+#annee {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+#Poeme {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+#poeme {
+  padding: 30px;
+}
+
+#anneee {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+.cure {
+  height: 300px;
+  width: 300px;
+}
+
+#contact {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -127,12 +107,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -140,9 +118,58 @@ input[type=submit]:hover {
 }
 
 #adhesion {
-
-  text-align : center;
+  text-align: center;
   color: black;
   font-size: 100%;
 }
-  
+
+.menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.menu .categorie {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #3b4d61;
+  margin-right: 10px;
+}
+
+.menu .categorie h3 {
+  color:white;
+  width: 250px;
+}
+
+.menu .categorie ul {
+  display: none;
+  position: absolute;
+  width: 250px;
+  padding:0;
+  margin: 0;
+  list-style: none;
+  background-color: #3b4d61;
+}
+
+.menu .categorie:hover ul {
+  display: block;
+}
+.menu .categorie:hover h3 {
+  text-shadow:2px 2px 2px black;
+}
+.menu .categorie li
+{
+  border-top: 1px solid white;
+  color:#009c48;
+  padding: 5px 0;
+}
+.menu .categorie a
+{
+  color : white;
+  text-decoration : initial;
+}
+
+.po {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
