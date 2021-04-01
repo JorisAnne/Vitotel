@@ -128,7 +128,6 @@ input[type="submit"]:hover {
   margin-top: 20px;
 }
 
-
 .menu .categorie {
   display: inline-block;
   vertical-align: top;
@@ -173,3 +172,15 @@ input[type="submit"]:hover {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+#mentionslegales {
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+.mentionsl {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+	
+ 
